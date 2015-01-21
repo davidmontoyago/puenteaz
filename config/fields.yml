@@ -1,18 +1,35 @@
 fields:
-  address1:
+  businessName:
     field_group_id: <%=CONTACT_FIELDS_GROUP_ID%>
-    label: 'Address 1:'
+    label: 'Business Name:'
     as: 'string'
     maxlength: '100'
     required: false
     disabled: false
     hint: ''
     placeholder: ''
-  address2:
+  dateOfBirth:
     field_group_id: <%=CONTACT_FIELDS_GROUP_ID%>
-    label: 'Address 2:'
-    as: 'string'
-    maxlength: '100'
+    label: 'Date Of Birth:'
+    as: 'date'
+    required: false
+    disabled: false
+    hint: ''
+    placeholder: ''
+  preferredLanguage:
+    field_group_id: <%=CONTACT_FIELDS_GROUP_ID%>
+    label: 'Preferred Language:'
+    as: 'check_boxes'
+    collection_string: English|Spanish
+    required: false
+    disabled: false
+    hint: ''
+    placeholder: ''
+  category:
+    field_group_id: <%=CONTACT_FIELDS_GROUP_ID%>
+    label: 'Category:'
+    as: 'check_boxes'
+    collection_string: Member|Service Recipient|Donor|Volunteer
     required: false
     disabled: false
     hint: ''
