@@ -1,6 +1,5 @@
 require File.expand_path('../../../config/environment', __FILE__)
 require 'yaml'
-require 'pry'
 
 CONTACT_FIELDS_GROUP_ID = 3
 
