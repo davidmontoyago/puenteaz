@@ -1,6 +1,6 @@
 fields:
   address1:
-    field_group_id: 3
+    field_group_id: <%=CONTACT_FIELDS_GROUP_ID%>
     label: 'Address 1:'
     as: 'string'
     maxlength: '100'
@@ -9,7 +9,7 @@ fields:
     hint: ''
     placeholder: ''
   address2:
-    field_group_id: 3
+    field_group_id: <%=CONTACT_FIELDS_GROUP_ID%>
     label: 'Address 2:'
     as: 'string'
     maxlength: '100'

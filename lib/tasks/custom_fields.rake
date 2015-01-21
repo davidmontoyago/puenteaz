@@ -7,7 +7,7 @@ CONTACT_FIELDS_GROUP_ID = 3
 namespace :custom_fields do
   task :create  => :environment do
 
-    config = YAML.load_file './config/fields.yml'
+    config = YAML.load(ERB.new(File.read('./config/fields.yml')).result)
     config.symbolize_keys!
 
     config[:fields].each do |_, field|
