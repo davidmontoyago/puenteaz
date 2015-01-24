@@ -152,8 +152,13 @@ GEM
       railties (= 3.2.19)
     rails3-jquery-autocomplete (1.0.14)
       rails (>= 3.0)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
     rails_autolink (1.1.6)
       rails (> 3.1)
+    rails_serve_static_assets (0.0.3)
+    rails_stdout_logging (0.0.3)
     railties (3.2.19)
       actionpack (= 3.2.19)
       activesupport (= 3.2.19)
@@ -214,5 +219,6 @@ DEPENDENCIES
   pry
   pry-nav
   rails (= 3.2.19)
+  rails_12factor
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)
