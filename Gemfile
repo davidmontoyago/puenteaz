@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.1.5'
+
 gem 'fat_free_crm', :git => 'git://github.com/fatfreecrm/fat_free_crm.git'
 gem 'rails', '3.2.19'
 
