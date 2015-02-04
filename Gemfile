@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 
-gem 'fat_free_crm', :git => 'git://github.com/fatfreecrm/fat_free_crm.git'
+gem 'fat_free_crm', :git => 'git://github.com/fatfreecrm/fat_free_crm.git', :tag => 'v0.13.5'
 gem 'rails', '3.2.19'
 
 # Bundle edge Rails instead:
