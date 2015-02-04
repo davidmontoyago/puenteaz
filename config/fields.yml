@@ -1,4 +1,13 @@
 fields:
+  middleName:
+    field_group_id: <%=CONTACT_FIELDS_GROUP_ID%>
+    label: 'Middle Name:'
+    as: 'string'
+    maxlength: '100'
+    required: false
+    disabled: false
+    hint: ''
+    placeholder: ''
   businessName:
     field_group_id: <%=CONTACT_FIELDS_GROUP_ID%>
     label: 'Business Name:'
