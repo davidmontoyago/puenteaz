@@ -4,13 +4,9 @@ require 'yaml'
 CONTACT_FIELDS_GROUP_ID = 3
 
 namespace :custom_fields do
+
   task :create  => :environment do
-
-    config = YAML.load(ERB.new(File.read('./config/fields.yml')).result)
-    config.symbolize_keys!
-
     config[:fields].each do |_, field|
-      field.symbolize_keys!
       as = field[:as]
 
       unless Field.exists?(field_group_id: field[:field_group_id], label: field[:label])
@@ -21,6 +17,16 @@ namespace :custom_fields do
         puts "SKIPPING! field with label: '#{field[:label]}' already exists for field_group_id: #{field[:field_group_id]}"
       end
     end
+  end
 
+  task :delete => :environment do
+    Field.delete_all
+  end
+
+  def config
+    config = YAML.load(ERB.new(File.read('./config/fields.yml')).result)
+    config.symbolize_keys!
+    config[:fields].each { |_, field| field.symbolize_keys! }
+    config
   end
 end
