@@ -20,7 +20,7 @@ namespace :custom_fields do
   end
 
   task :delete => :environment do
-    Field.delete_all
+    Field.custom_fields.delete_all
   end
 
   def config
